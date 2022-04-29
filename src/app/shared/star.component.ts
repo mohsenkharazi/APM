@@ -7,7 +7,7 @@ import { Component, Input, OnChanges, SimpleChanges } from "@angular/core";
 })
 export class StarComponent implements OnChanges{
 
-    rating : number = 4;
+    @Input() rating : number = 4;
     cropWidth : number = 75;
 
     ngOnChanges(changes: SimpleChanges): void {
