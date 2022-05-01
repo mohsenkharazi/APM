@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { IProduct } from './product';
 
 @Component({
   selector: 'pm-product-detail',
@@ -9,6 +10,7 @@ import { ActivatedRoute } from '@angular/router';
 export class ProductDetailComponent implements OnInit {
 
   pageTitle : string = 'Product List';
+  product : IProduct | undefined;
 
   constructor(private route : ActivatedRoute) { }
 
